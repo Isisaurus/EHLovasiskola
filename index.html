@@ -11,14 +11,14 @@
 <body>
     <header>
         <div class="menu">
-            <ul>
-                <li class="button"><a href="#">Contact us</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Camping</a></li>
+            <ul class="menu">
+                <li class="button"><a href="#page-1">Contact us</a></li>
+                <li><a href="#page-2">About</a></li>
+                <li><a href="#page-3">Camping</a></li>
             </ul>
             <ul class="socmed">
-                <li><a href=""></a><img src="#" alt="#"></a></li>
-                <li><a href=""></a><img src="#" alt="#"></a></li>
+                <li><a href="https://www.facebook.com/lovasiskola"  target="_blank" rel="noopener"><img src="pictures/Facebook.png" alt="#"></a></li>
+                <li><a href="https://www.instagram.com/erdohorvatilovastanya/"  target="_blank" rel="noopener"><img src="pictures/Instagram.png" alt="#"></a></li>
             </ul>
             <div class="logo"><img src="pictures/logo_white_website.png" alt="logo"></div>
         </div>
@@ -28,48 +28,63 @@
                 <p>If you have gained the trust of a horse you have gained a friend for life. If you have gained the trust of a horse you have gained a friend for life. If you have gained the trust of a horse you have gained a friend for life. If you have gained the trust of a horse you have gained a friend for life.</p>
             </div>
             <div>
-                <button><a href="#">Contact us</a></button>
-                <button class="camps"><a href="#">About our camps</a></button>
+                <button class="contact"><a href="#page-1">Contact us</a></button>
+                <button class="camps"><a href="#page-3">About our camps</a></button>
             </div>
         </section>
     </header>
-    <section class="about">
-        <div>
-            <h2>My name is Bettina</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsan sapien facilisi venenatis, odio gravida elementum. Ut diam massa ut cursus. Aliquam, vel cursus praesent nisi in. Aliquam ornare placerat turpis in.Aliquam ornare placerat turpis in.</p>
-            <img src="#" alt="betti">
+    <section class="about" id="page-2">
+        <div class="myname">
+            <div class="aboutwrap">
+                <h2>My name is Bettina</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsan sapien facilisi venenatis, odio gravida elementum. Ut diam massa ut cursus. Aliquam, vel cursus praesent nisi in. Aliquam ornare placerat turpis in.Aliquam ornare placerat turpis in.</p>
+            </div>
+            <img src="pictures/bettiabout.jpg" alt="betti">
         </div>
-        <div>
-            <h2>Our mission</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsan sapien facilisi venenatis, odio gravida elementum. Ut diam massa ut cursus. Aliquam, vel cursus praesent nisi in. Aliquam ornare placerat turpis in.</p>
-            <img src="#" alt="groupphoto">
-        </div>
-    </section>
-    <section class="camp">
-        <div>
-            <img src="#" alt="groupphotowithhorse">
-        </div>
-        <div>
-            <h2>Our horse riding camp</h2>
-            <p>If you have gained the trust of a horse you have gained a friend for life. If you have gained the trust of a horse you have gained a friend for life. If you have gained the trust of a horse you have gained a friend for life.  If you have gained the trust of a horse you have gained a friend for life.</p>
-            <img src="#" alt="groupphotocamp">
-        </div>
-        <div>
-            <a href="#"><img src="#" alt="facebook"></a>
-            <a href="#"><img src="#" alt="instagram"></a>
-            <button><a href="#">Contact information</a></button>
+
+        <div class="mymiss">
+            <div class="misswrap">
+                <h2>Our mission</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsan sapien facilisi venenatis, odio gravida elementum. Ut diam massa ut cursus. Aliquam, vel cursus praesent nisi in. Aliquam ornare placerat turpis in.</p>
+            </div>
+            <img src="pictures/camp.jpg" alt="groupphoto">
         </div>
     </section>
-    <section class="contact">
-        <div>
-            <h2>Contact information</h2>
-            <p>If you have any questions, please send us an email or contant us via phone. Want to learn more about us? Check out our social media!</p>
+    <section class="camp" id="page-3">
+        <div class="campimg">
+            <img src="pictures/Rectangle 9.png" alt="groupphotowithhorse">
         </div>
-        <div>
-            <button><a href="#">About our camps</a></button>
-            <button><a href="#">About us</a></button>
-            <a href="#"><img src="#" alt="facebook"></a>
-            <a href="#"><img src="#" alt="instagram"></a>
+        <div class="campwrap">
+            <div class="camptextwrap">
+                <h2>Our horse riding camp</h2>
+                <p>If you have gained the trust of a horse you have gained a friend for life. If you have gained the trust of a horse you have gained a friend for life. If you have gained the trust of a horse you have gained a friend for life.  If you have gained the trust of a horse you have gained a friend for life.</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/lovasiskola" target="_blank" rel="noopener"><img src="pictures/Facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://www.instagram.com/erdohorvatilovastanya/" target="_blank" rel="noopener"><img src="pictures/Instagram.png" alt="instagram"></a></li>
+                    <li><button><a href="#page-1">Contact information</a></button></li>
+                </ul>
+            </div>
+            <img src="pictures/Rectangle 10.png" alt="groupphotocamp" class="grouppic">
+        </div>
+    </section>
+    <section class="contact" id="page-1">
+        <div class="contactwrap">
+            <div class="text">
+                <h2>Contact information</h2>
+                <p>If you have any questions, please send us an email or contant us via phone. Want to learn more about us? Check out our social media!</p>
+                <ul class="buttonwrap">
+                    <li><button class="white"><a href="#page-3">About our camps</a></button></li>
+                    <li><button class="about"><a href="#page-2">About us</a></button></li>
+                    <li><a href="https://www.facebook.com/lovasiskola" target="_blank" rel="noopener"><img src="pictures/Facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://www.instagram.com/erdohorvatilovastanya/" target="_blank" rel="noopener"><img src="pictures/Instagram.png" alt="instagram"></a></li>
+                </ul>
+            </div>
+            <ul class="info">
+                <li><a href=""><img src="pictures/Profile.png" alt="profileicon"><p>Lovász Bettina</p></a></li>
+                <li><a href=""><img src="pictures/Email.png" alt="emailicon"><p>ehlovasiskola@gmail.com</p></a></li>
+                <li><a href=""><img src="pictures/Phone.png" alt="phoneicon"><p>+36 30 352 0564</p></a></li>
+                <li><a href=""><img src="pictures/Location.png" alt="locationicon"><p>1234 Erdohorvati Hgrdgrm street 156.</p></a></li>
+            </ul>
         </div>
     </section>
 </body>

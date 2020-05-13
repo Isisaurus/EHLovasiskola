@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0px;
     padding: 0px;
@@ -51,7 +54,7 @@ header div.menu{
     margin-top: 0;
 }
 
-header ul{
+header ul.menu{
     display: inline-block;
     list-style: none;
     margin: 0;
@@ -62,10 +65,19 @@ header ul.socmed{
     display: inline-block;
     float: left;
     padding: 0;
+    width: 150px;
+    margin: 0;
 }
 
-header ul.socmed li a{
-    width: 20px;
+header div.menu ul.socmed img{
+    width: 30px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    padding: 2px;
+    transition: ease-in-out 0.3s;
+}
+
+header ul.socmed li a img:hover{
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
 }
 
 header li{
@@ -73,37 +85,48 @@ header li{
     cursor: pointer;
 }
 
-header li a{
+header ul.menu li a{
     color: white;
     text-decoration: none;
-    padding: 10px;
+    transition: ease-in-out 0.3s;
+    padding: 10px 25px 5px 25px;
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+
+header ul.menu li a:hover{
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
 }
 
 header ul li.button a{
-
     color: white;
     padding: 5px 20px;
     margin-right: 10px;
-    background-color: #BA5A32;
-    border-radius: 50px;
+    background-color: rgba(186, 91, 50, 0.9);
+    transition: all 0.3s;
 }
 
-header div.logo{
-    width: 200px;
-    margin: auto;
+header ul li.button a:hover{
+    background-color:rgba(186, 91, 50, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
 
+
+header div.logo{
+    width: 250px;
+    margin: auto;
 }
 
 header div.logo img{
-    width: 200px;
+    width: 250px;
 }
 
+
 section.home{
-    margin: 0;
-    width: 60%;
-    position: absolute;
-    left: 15%;
-    top: 40%;
+    display: block;
+    margin: auto;
+    width: 1000px;
+    position: relative;
+    top: 300px;
 }
 
 section.home p{
@@ -121,22 +144,32 @@ section.home button{
     letter-spacing: 0.05em;
     display: inline-block;
     color: white;
-    border: none;
     padding: 5px 25px;
-    margin-right: 10px;
-    background-color: #BA5A32;
-    border-radius: 50px;
+    margin-right: 22px;
+    background-color: rgba(186, 91, 50, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0);
+    transition: ease-in-out 0.3s;
+}
+
+section.home button.contact:hover{
+    background-color:rgba(186, 91, 50, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.9);
 }
 
 section.home button.camps{
     display: inline-block;
     color: white;
     padding: 5px 25px;
-    background-color:white;
-    border-radius: 50px;
+    background-color: rgba(186, 91, 50, 0);
+    border-left: 2px solid rgba(186, 91, 50, 0);
+    border-bottom: 2px solid rgba(186, 91, 50, 1);
+    transition: ease-in-out 0.3s;
 }
 section.home button.camps a{
-    color: #515151;
+    color:white;
+}
+section.home button.camps:hover{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.9);
 }
 
 section.about{
@@ -147,16 +180,227 @@ section.about{
     background-color: #403531;
 }
 
-section.about h2{
+section.about h2, section.contact h2{
     margin: 0;
 }
 
+section.about div.myname{
+    width: 1000px;
+    margin: auto;
+    padding-top: 100px;
+    height: 350px;
+}
+
+section.about div.myname img{
+    width: 470px;
+    float: right;
+    padding-left: 50px;
+}
+
+section.about div.aboutwrap{
+    width: 470px;
+    display: inline-block;
+}
+
+section.about div.mymiss{
+    width: 1000px;
+    margin: auto;
+    padding-top: 100px;
+    height: 350px;
+}
+section.about div.mymiss img{
+    width: 470px;
+    float: left;
+    padding-right: 50px;
+}
+section.about div.misswrap{
+    width: 470px;
+    display: inline-block;
+    position: relative;
+}
+
 section.camp{
+    padding: 0;
+    margin: 0;
     width: 100%;
     height: 1024px;
+    background-color: #403531;
+}
+section.camp div.campimg{
+    width: 1000px;
+    margin: auto;
+    padding: 100px 0px 100px 0px;
+}
+section.camp div.campimg img{
+    width: 1000px;
+}
+section.camp div.campwrap{
+    width: 1000px;
+    margin: auto;
+    height: 350px;
+}
+section.camp div.camptextwrap{
+    display: inline-block;
+    width: 650px;
+}
+
+section.camp img.grouppic{
+    width:250px;
+    float: right;
+}
+section.camp div.camptextwrap ul{
+    width: 400px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+section.camp div.camptextwrap ul li{
+    list-style: none;
+}
+section.camp div.camptextwrap ul li a{
+    text-decoration: none;
+}
+section.camp div.camptextwrap ul li a img{
+    width: 30px;
+    padding: 2px;
+    border: 2px rgba(255, 255, 255, 1) solid;
+    margin: 0;
+    transition: linear 0.2S;
+}
+section.camp div.camptextwrap ul li a img:hover{
+    border: 2px rgba(255, 255, 255, 0) solid;
+    border-bottom: 2px rgba(255, 255, 255, 1) solid;
+}
+
+section.camp div.camptextwrap ul li button{
+    padding: 5px 25px;
+    background-color: rgba(186, 91, 50, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0);
+    transition: ease-in-out 0.3s;
+}
+section.camp div.camptextwrap ul li button a{
+    font-family: 'Muli', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    color: white;
+    text-decoration: none;
+}
+section.camp div.camptextwrap ul li button:hover{
+    background-color:rgba(186, 91, 50, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
 }
 
 section.contact{
+    padding: 0;
+    margin: 0;
     width: 100%;
     height: 1024px;
+    background-color: #403531;
+}
+
+section.contact div.contactwrap{
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    top: 300px;
+    height: 350px;
+}
+section.contact div.text{
+    width: 650px;
+    display: inline-block;
+}
+section.contact div.contactwrap div.text button{
+    padding: 5px 20px;
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+section.contact div.contactwrap div.text button.about{
+    background-color: rgba(186, 91, 50, 0.9);
+    transition: ease-in-out 0.3s;
+}
+section.contact div.contactwrap div.text button.about:hover{
+    background-color: rgba(186, 91, 50, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+
+section.contact div.contactwrap div.text button.white{
+    background-color: #403531;
+    border-bottom: 2px solid rgba(186, 91, 50, 1);
+    transition: ease-in-out 0.3s;
+}
+section.contact div.contactwrap div.text button.white:hover{
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+
+section.contact div.contactwrap div.text button a{
+    font-family: 'Muli', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+}
+
+section.contact div.contactwrap div.text a img{
+    width: 30px;
+    padding: 2px;
+    border: 2px rgba(255, 255, 255, 1) solid;
+    margin: 0;
+    transition: linear 0.2S;
+}
+section.contact div.contactwrap div.text a img:hover{
+    border: 2px rgba(255, 255, 255, 0) solid;
+    border-bottom: 2px rgba(255, 255, 255, 1) solid;
+}
+
+section.contact div.contactwrap div.text ul.buttonwrap{
+    width: 500px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+section.contact div.contactwrap div.text ul.buttonwrap li{
+    padding: 0;
+}
+
+section.contact ul.info{
+    padding-left: 0px;
+    width: 300px;
+    float: right;
+}
+section.contact ul{
+    list-style: none;
+
+}
+section.contact ul li{
+    padding-bottom: 25px;
+}
+
+section.contact ul li a{
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+section.contact ul.info li a img{
+    width: 40px;
+    padding: 5px;
+}
+
+section.contact ul.info li a p{
+    margin: 0;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
 }
