@@ -221,7 +221,6 @@ section.home a.camps{
 }
 section.home a.camps:hover{
     border-bottom: 2px solid rgba(255, 255, 255, 0.9);
-    transform: scale(1.25);
 }
 
 section.about{
