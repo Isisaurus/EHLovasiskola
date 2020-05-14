@@ -49,6 +49,7 @@ header{
     background-size: cover;
 }
 
+
 header div.menu{
     height: 7vh;
     padding: 30px;
@@ -404,16 +405,22 @@ section.contact ul.info li a p{
 
 
 /* Responsive Queries */
-@media screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px){
     header  div.menu ul.menu{
         width: 300px;
     }
     header div.menu ul.menu li a{
-        font-size: 1em;
-        padding: 7px;
+        font-size: 0.8rem;
+        padding: 5px;
     }
     header div.menu ul.menu li.button a{
-        padding: 5px 25px;
+        padding: 5px 20px;
+    }
+    header div.menu{
+        padding: 20px;
+    }
+    header div.menu ul.menu{
+        width: 250px;
     }
     section.home{
         width: 700px;
@@ -585,7 +592,7 @@ section.contact ul.info li a p{
         width: 30px;
     }   
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) and (min-width: 400px){
     h2{
         padding-bottom: 15px;
     }
@@ -619,9 +626,8 @@ section.contact ul.info li a p{
         width: 25px;
     }
     header div.menu ul.menu li a{
-        font-size: 0.7em;
+        font-size: 0.7rem;
         padding: 3px;
-        font-size: 12px;
         float: right;
     }
     header div.menu ul.menu li.button a{
@@ -633,7 +639,7 @@ section.contact ul.info li a p{
         top: 150px;
     }
     section.home a{
-        font-size: 14px;
+        font-size: 0.7rem;
         padding: 3px 10px;
     }
     section.about{
@@ -696,7 +702,7 @@ section.contact ul.info li a p{
     }
 
     section.camp div.campwrap ul li a.campbutton{
-        font-size: 14px;
+        font-size: 0.7rem;
     }
     section.contact{
         height: 860px;
@@ -712,7 +718,7 @@ section.contact ul.info li a p{
         width: 350px;
     }
     section.contact div.contactwrap div.text ul.buttonwrap li a{
-        font-size: 14px;
+        font-size: 0.7rem;
     }
     section.contact div.contactwrap div.text ul.buttonwrap li a img{
         width: 25px;
@@ -723,7 +729,7 @@ section.contact ul.info li a p{
         float: none;
     }
     section.contact div.contactwrap ul.info li a p{
-        font-size: 14px;
+        font-size: 0.7rem;
     }
     section.contact div.contactwrap ul.info li a img{
         width: 25px;
