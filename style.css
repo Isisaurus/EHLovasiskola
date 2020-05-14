@@ -37,6 +37,59 @@ h2{
     padding-bottom: 25px;
     font-weight: normal;
 }
+header div.dotsright{
+    position: relative;
+    top: 50%;
+    padding-right: 50px;
+    height: 200px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    float: right;
+}
+header div.dotsright a{
+    height: 10px;
+    width: 10px;
+    background-color:none;
+    border: 2px white solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+header div.dotsright a.homedot{
+    background-color: white;
+    transform: scale(1.5);
+}
+header div.dotsright a:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+header div.dots{
+    width: 50px;
+    position: relative;
+    top: 50%;
+    padding-left: 50px;
+    height: 200px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+header div.dots a{
+    height: 10px;
+    width: 10px;
+    background-color:none;
+    border: 2px white solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+header div.dots a.homedot{
+    background-color: white;
+    transform: scale(1.5);
+}
+header div.dots a:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
 
 header{
     margin: 0;
@@ -168,6 +221,7 @@ section.home a.camps{
 }
 section.home a.camps:hover{
     border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+    transform: scale(1.25);
 }
 
 section.about{
@@ -215,6 +269,65 @@ section.about div.misswrap{
     width: 470px;
     display: inline-block;
     position: relative;
+}
+
+section.about div.dots{
+    padding-left: 50px;
+    height: 200px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section.about div.alignfixabout{
+    position: relative;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+}
+
+section.about div.dots a{
+    height: 10px;
+    width: 10px;
+    background-color:none;
+    border: 2px white solid;
+    border-radius: 50%;
+    display: inline-block;
+}
+section.about div.dots a.aboutdot{
+    background-color: white;
+    transform: scale(1.5);
+    transition: ease-in-out 0.3s;
+}
+section.about div.dots a:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: scale(1.25);
+}
+section.about div.dotsright{
+    padding-right: 50px;
+    height: 200px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    float: right;
+}
+
+section.about div.dotsright a{
+    height: 10px;
+    width: 10px;
+    background-color:none;
+    border: 2px white solid;
+    border-radius: 50%;
+    display: inline-block;
+}
+section.about div.dotsright a.aboutdot{
+    background-color: white;
+    transform: scale(1.5);
+    transition: ease-in-out 0.3;
+}
+section.about div.dotsright a:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: scale(1.25);
 }
 
 section.camp{
@@ -289,6 +402,64 @@ section.camp div.camptextwrap ul li a.campbutton:hover{
     background-color:rgba(186, 91, 50, 0.5);
     border-bottom: 2px solid rgba(255, 255, 255, 1);
 }
+
+section.camp div.alignfix{
+    position: relative;
+    top: -50%;
+}
+
+section.camp div.dots{
+    padding-left: 50px;
+    height: 200px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section.camp div.dots a{
+    height: 10px;
+    width: 10px;
+    background-color:none;
+    border: 2px white solid;
+    border-radius: 50%;
+    display: inline-block;
+}
+section.camp div.dots a.campdot{
+    background-color: white;
+    transform: scale(1.5);
+    transition: ease-in-out 0.3;
+}
+section.camp div.dots a:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: scale(1.25);
+}
+section.camp div.dotsright{
+    position: relative;
+    float: right;
+    margin-right: 50px;
+    height: 200px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section.camp div.dotsright a{
+    height: 10px;
+    width: 10px;
+    background-color:none;
+    border: 2px white solid;
+    border-radius: 50%;
+}
+section.camp div.dotsright a.campdot{
+    background-color: white;
+    transform: scale(1.5);
+    transition: ease-in-out 0.3;
+}
+section.camp div.dotsright a:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: scale(1.25);
+}
+
 
 section.contact{
     padding: 0;
@@ -399,7 +570,59 @@ section.contact ul.info li a p{
     font-size: 1.2rem;
     letter-spacing: 0.05em;
 }
+section.contact div.dots{
+    position: relative;
+    padding-left: 50px;
+    height: 200px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
+section.contact div.dots a{
+    height: 10px;
+    width: 10px;
+    background-color:none;
+    border: 2px white solid;
+    border-radius: 50%;
+    display: inline-block;
+}
+section.contact div.dots a.contactdot{
+    background-color: white;
+    transform: scale(1.5);
+    transition: ease-in-out 0.3;
+}
+section.contact div.dots a:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: scale(1.25);
+}
+section.contact div.dotsright{
+    position: relative;
+    padding-right: 50px;
+    height: 200px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    float: right;
+}
+
+section.contact div.dotsright a{
+    height: 10px;
+    width: 10px;
+    background-color:none;
+    border: 2px white solid;
+    border-radius: 50%;
+    display: inline-block;
+}
+section.contact div.dotsright a.contactdot{
+    background-color: white;
+    transform: scale(1.5);
+    transition: ease-in-out 0.3;
+}
+section.contact div.dotsright a:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: scale(1.25);
+}
 
 
 
@@ -486,6 +709,30 @@ section.contact ul.info li a p{
     }
     section.contact div.contactwrap ul.info li a img{
         width: 30px;
+    }
+    header div.dots{
+        padding-left: 15px;
+    }
+    section.about div.dots{
+        padding-left: 15px;
+    }
+    section.camps div.dots{
+        padding-left: 15px;
+    }
+    section.contact div.dots{
+        padding-left: 15px;
+    }
+    header div.dotsright{
+        padding-right: 15px;
+    }
+    section.about div.dotsright{
+        padding-right: 15px;
+    }
+    section.camps div.dotsright{
+        padding-right: 15px;
+    }
+    section.contact div.dotsright{
+        padding-right: 15px;
     }
 }
 @media only screen and (max-width: 768px){
@@ -590,7 +837,8 @@ section.contact ul.info li a p{
     }
     section.contact div.contactwrap ul.info li a img{
         width: 30px;
-    }   
+    }      
+
 }
 @media only screen and (max-width: 600px) and (min-width: 400px){
     h2{
@@ -728,10 +976,100 @@ section.contact ul.info li a p{
         width: 350px;
         float: none;
     }
+    section.contact div.contactwrap ul.info li{
+        padding: 5px 0;
+    }
     section.contact div.contactwrap ul.info li a p{
         font-size: 0.7rem;
     }
     section.contact div.contactwrap ul.info li a img{
         width: 25px;
-    }   
+    }
+    
+            section.contact div.dots{
+                height: 150px;
+                padding-left: 30px;
+            }
+
+            section.contact div.dots a{
+                height: 5px;
+                width: 5px;
+                border: 1px white solid;
+            }
+            section.camp div.dots{
+                height: 150px;
+                padding-left: 30px;
+            }
+        
+            section.camp div.dots a{
+                height: 5px;
+                width: 5px;
+                border: 1px white solid;
+            }
+            section.about div.dots{
+                height: 150px;
+                padding-left: 30px;
+            }
+        
+            section.about div.dots a{
+                height: 5px;
+                width: 5px;
+                border: 1px white solid;
+            }
+            header div.dots{
+                height: 150px;
+                padding-left: 30px;
+                top: 40%;
+            }
+        
+            header div.dots a{
+                height: 5px;
+                width: 5px;
+                border: 1px white solid;
+            }
+            
+
+            section.contact div.dotsright{
+                height: 150px;
+                padding-right: 30px;
+            }
+
+            section.contact div.dotsright a{
+                height: 5px;
+                width: 5px;
+                border: 1px white solid;
+            }
+            section.camp div.dotsright{
+                height: 150px;
+                padding-right: 30px;
+                margin: 0;
+            }
+        
+            section.camp div.dotsright a{
+                height: 5px;
+                width: 5px;
+                border: 1px white solid;
+            }
+            section.about div.dotsright{
+                height: 150px;
+                padding-right: 30px;
+            }
+        
+            section.about div.dotsright a{
+                height: 5px;
+                width: 5px;
+                border: 1px white solid;
+            }
+            header div.dotsright{
+                height: 150px;
+                padding-right: 30px;
+                top: 40%;
+            }
+        
+            header div.dotsright a{
+                height: 5px;
+                width: 5px;
+                border: 1px white solid;
+            }
+
 }
